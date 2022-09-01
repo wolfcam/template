@@ -11,11 +11,13 @@ terraform {
 provider "aws" {
   version = "~> 3.0"
 }
-
+data "aws_key_pair" "auth" {
+    key_name = var.aws_key_pair_name
+}
 
 resource "aws_instance" "aws_instance" {
   ami = var.aws_instance_ami
-  key_name = aws_key_pair.auth.id
+  key_name = data.aws_key_pair.auth.name
   instance_type = var.aws_instance_aws_instance_type
   availability_zone = var.availability_zone
   tags = {
@@ -27,10 +29,7 @@ resource "tls_private_key" "ssh" {
     algorithm = "RSA"
 }
 
-resource "aws_key_pair" "auth" {
-    key_name = var.aws_key_pair_name
-    public_key = tls_private_key.ssh.public_key_openssh
-}
+
 
 resource "aws_ebs_volume" "volume_name" {
     availability_zone = var.availability_zone

@@ -123,7 +123,8 @@
       "group_name": "",
       "secured": false,
       "hidden": false,
-      "shortname": ""
+      "shortname": "",
+      "type": "string"
     },
     {
       "name": "aws_instance_aws_instance_public_ip",
@@ -132,7 +133,8 @@
       "group_name": "",
       "secured": false,
       "hidden": false,
-      "shortname": ""
+      "shortname": "",
+      "type": "string"
     }
   ]
 }
