@@ -1,0 +1,138 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Inst-ncias-aws_instance.aws_instance",
+      "label": "Instâncias - aws_instance.aws_instance"
+    },
+    {
+      "name": "Outro",
+      "label": "Outro"
+    },
+    {
+      "name": "inst_ncias",
+      "label": "Instâncias"
+    },
+    {
+      "name": "aws_network_interface_networks",
+      "label": "aws_network_interface Networks"
+    },
+    {
+      "name": "aws_ebs_volume_storage",
+      "label": "aws_ebs_volume Storage"
+    },
+    {
+      "name": "aws_instance_networks",
+      "label": "aws_instance Networks"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "aws_instance_ami",
+      "label": "Aws Instance Ami",
+      "description": "Gerado",
+      "type": "string",
+      "default": "ami-02f3416038bdb17fb",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_instance_aws_instance_type",
+      "label": "Aws Instance Aws Instance Type",
+      "description": "Gerado",
+      "type": "string",
+      "default": "t2.micro",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "availability_zone",
+      "label": "Availability Zone",
+      "description": "Gerado",
+      "type": "string",
+      "default": "us-east-2",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_instance_name",
+      "label": "Aws Instance Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "ibmteste",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_key_pair_name",
+      "label": "Aws Key Pair Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "ibmlab",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "volume_name_volume_size",
+      "label": "Volume Name Volume Size",
+      "description": "Gerado",
+      "type": "string",
+      "default": "40",
+      "regex": "",
+      "group_name": "aws_ebs_volume_storage",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "aws_instance_aws_instance_private_ip",
+      "label": "aws_instance_aws_instance_private_ip",
+      "description": "",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": ""
+    },
+    {
+      "name": "aws_instance_aws_instance_public_ip",
+      "label": "aws_instance_aws_instance_public_ip",
+      "description": "",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": ""
+    }
+  ]
+}
