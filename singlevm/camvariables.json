@@ -1,0 +1,229 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Inst-ncias",
+      "label": "Instâncias"
+    },
+    {
+      "name": "Inst-ncias-vsphere_virtual_machine.virtual_machine",
+      "label": "Instâncias - vsphere_virtual_machine.virtual_machine"
+    },
+    {
+      "name": "Outro",
+      "label": "Outro"
+    },
+    {
+      "name": "inst_ncias",
+      "label": "Instâncias"
+    },
+    {
+      "name": "vsphere_virtual_machine_resource_pool",
+      "label": "vsphere_virtual_machine Resource Pool"
+    },
+    {
+      "name": "vsphere_virtual_machine_connection",
+      "label": "vsphere_virtual_machine Connection"
+    },
+    {
+      "name": "vsphere_virtual_machine_networks",
+      "label": "vsphere_virtual_machine Networks"
+    }
+  ],
+  "output_groups": [  {
+    "name": "hostname",
+    "label": "Hostname"
+  } ],
+  "template_input_params": [
+    {
+      "name": "virtual_machine_name",
+      "label": "Virtual Machine Name",
+      "description": "Virtual machine name for virtual_machine",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_number_of_vcpu",
+      "label": "Virtual Machine Number Of Vcpu",
+      "description": "Number of virtual cpu's.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_memory",
+      "label": "Quantidade de Memória",
+      "description": "Memory allocation.",
+      "type": "string",
+      "default": "4",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_disk_name",
+      "label": "Virtual Machine Disk Name",
+      "description": "The name of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_disk_size",
+      "label": "Tamanho do disco",
+      "description": "The size of the disk, in GiB.",
+      "type": "string",
+      "default": "40",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_template_name",
+      "label": "Virtual Machine Template Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_datacenter_name",
+      "label": "Virtual Machine Datacenter Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_datastore_name",
+      "label": "Virtual Machine Datastore Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "inst_ncias",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_resource_pool",
+      "label": "Virtual Machine Resource Pool",
+      "description": "Resource pool.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "vsphere_virtual_machine_resource_pool",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_connection_user",
+      "label": "Virtual Machine Connection User",
+      "description": "null",
+      "type": "string",
+      "default": "root",
+      "regex": "",
+      "group_name": "vsphere_virtual_machine_connection",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "virtual_machine_connection_private_key",
+      "label": "Virtual Machine Connection Private Key",
+      "description": "null",
+      "type": "string",
+      "default": "key_value",
+      "regex": "",
+      "group_name": "vsphere_virtual_machine_connection",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "network_network_name",
+      "label": "Network Network Name",
+      "description": "Gerado",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "vsphere_virtual_machine_networks",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "vsphere_virtual_machine_virtual_machine_name",
+      "label": "Hostname",
+      "description": "",
+      "group_name": "hostname",
+      "secured": false,
+      "hidden": false,
+      "shortname": ""
+    },
+    {
+      "name": "vsphere_virtual_machine_virtual_machine_private_ip",
+      "label": "Ip Privado",
+      "description": "",
+      "group_name": "hostname",
+      "secured": false,
+      "hidden": false,
+      "shortname": ""
+    }
+  ]
+}
